@@ -1,5 +1,7 @@
 # Sanders-AzureAD-Tenant-Restrictions
 This is about an Edge extension that will do the following.
+It uses the declarativeNetRequest API which is a bit more privacy friendly than the webrequest API.
+
 
 It will inject headers for:
 
@@ -18,3 +20,5 @@ It will inject headers for:
   Please use the policies (GPO/Settings catalog) to limit OneDrive, Outlook, Teams etc to a single tenant.
   
  
+Requirements:
+  Modern authentication needs to be enabled!
