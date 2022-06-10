@@ -18,7 +18,11 @@ It will inject headers for:
   
   Please note, this only resolves the issue for the Edge browser.
   Please use the policies (GPO/Settings catalog) to limit OneDrive, Outlook, Teams etc to a single tenant.
+  This extension is not enabled by default for InPrivate/Incognito session. Disable InPrivate/InCognito if that's a requirement.
   
  
 Requirements:
   Modern authentication needs to be enabled!
+
+
+Later I'll update the Intune administrative templates and the group policy settings to enforce the tenants. I need to have the extension ID to finalize this. This is awaiting the approval process in the Edge extension store.
