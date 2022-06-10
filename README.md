@@ -25,4 +25,4 @@ Requirements:
   Modern authentication needs to be enabled!
 
 
-Later I'll update the Intune administrative templates and the group policy settings to enforce the tenants. I need to have the extension ID to finalize this. This is awaiting the approval process in the Edge extension store.
+Later I'll update the Intune administrative templates and the group policy settings to enforce the tenant settings and how to set the information. I need to have the extension ID to finalize this. This is awaiting the approval process in the Edge extension store.
