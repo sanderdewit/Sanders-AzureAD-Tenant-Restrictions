@@ -1,28 +1,17 @@
-# Sanders-AzureAD-Tenant-Restrictions
+# Sanders-EntraID-Tenant-Restrictions
 This is about an Edge extension that will do the following.
 It uses the declarativeNetRequest API which is a bit more privacy friendly than the webrequest API.
 
+Updated to leverage tenant restrictions v2.
 
 It will inject headers for:
 
-- login.microsoftonline.com, login.microsoft.com, login.windows.net
-  - Restrict-Access-To-Tenants:  [tenant-id], [tenant id] etc... This list the tenants that the user is allowed to authenticate too.
-  you can leverage contoso.com,fabrikam.onmicrosoft.com,72f988bf-86f1-41af-91ab-2d7cd011db47 as possible types of values. I do recommend using the tenant-id. (whatismytenantid.com)
-  - Restrict-Access-Context: [tenant-id] This tells which tenant is setting the tenant restrictions. This enables the signin logs into the tenant.
-- login.live.com
-  - sec-Restrict-Tenant-Access-Policy: restrict-msa. This tells the Microsoft account platform to not allow users to sign in to consumer applications.
+- login.microsoftonline.com, login.microsoft.com, login.windows.net, login.live.com
+  - sec-Restrict-Tenant-Access-Policy:  [tenant-id]:[policy-guid]
   
-  
-  More information regarding azuread tenant restriction
-  https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions
+  More information regarding azuread tenant restriction v2
+  [https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions](https://learn.microsoft.com/en-us/azure/active-directory/external-identities/tenant-restrictions-v2)
   
   Please note, this only resolves the issue for the Edge browser.
   Please use the policies (GPO/Settings catalog) to limit OneDrive, Outlook, Teams etc to a single tenant.
   This extension is not enabled by default for InPrivate/Incognito session. Disable InPrivate/InCognito if that's a requirement.
-  
- 
-Requirements:
-  Modern authentication needs to be enabled!
-
-
-Later I'll update the Intune administrative templates and the group policy settings to enforce the tenant settings and how to set the information. I need to have the extension ID to finalize this. This is awaiting the approval process in the Edge extension store.
