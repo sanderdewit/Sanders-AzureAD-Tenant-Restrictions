@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        { "header": "sec-Restrict-Tenant-Access-Policy", "operation": "set", "value": "0e0ccaff-df15-4553-a500-85cd061c24ba" },	  
+      ]
+    },
+    "condition": {"urlFilter": "login.microsoftonline.com", "resourceTypes": ["main_frame"] }
+  }
+]

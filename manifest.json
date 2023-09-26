@@ -1,0 +1,21 @@
+{
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_security_policy": {
+      "extension_pages": "default-src 'self'; object-src 'self'"
+   },
+   "host_permissions": [ "https://login.microsoftonline.com/*", "https://login.windows.net/*", "https://login.live.com/*", "https://login.microsoft.com/*" ],
+   "manifest_version": 3,
+   "name": "Sanders EntraID Tenant Restrictions",
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "options.html"
+   },
+   "permissions": [ "storage", "declarativeNetRequest", "declarativeNetRequestFeedback" ],
+   "storage": {
+      "managed_schema": "schema.json"
+   },
+   "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx",
+   "version": "0.25"
+}

@@ -1,0 +1,12 @@
+{
+    "type" : "object",
+
+    "properties" : {
+        "tenantID" : {
+            "type" : "string"
+        },
+        "policyGUID" : {
+            "type" : "string"
+        }
+}
+}
