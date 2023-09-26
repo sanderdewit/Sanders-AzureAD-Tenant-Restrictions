@@ -15,3 +15,8 @@ It will inject headers for:
   Please note, this only resolves the issue for the Edge browser.
   Please use the policies (GPO/Settings catalog) to limit OneDrive, Outlook, Teams etc to a single tenant.
   This extension is not enabled by default for InPrivate/Incognito session. Disable InPrivate/InCognito if that's a requirement.
+
+Policies are set via;
+Computer\HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Edge\3rdparty\Extensions\nfkbcpeceogpklhoiefkgilpmockpnpi\policy
+tenantID dword
+policyGUID dword
