@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<policyDefinitionResources revision="1.0" schemaVersion="1.0"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<displayName>Sanders EntraID Tenant Restrictions Policies</displayName>
+	<description>Configures policies for Sanders EntraID tenant Restrictions for both Edge and Chrome</description>
+	<resources>
+		<stringTable>
+			<string id="CAT_XML_2_ADMXL">Sanders EntraID policies</string>
+			<string id="CAT_XML_2_ADMXL_HELP"></string>
+			<string id="CAT_571DFA6A_1ABE_46F1_8B63_1C00BA1D52AC">Microsoft Edge Extension policy</string>
+			<string id="CAT_571DFA6A_1ABE_46F1_8B63_1C00BA1D52AC_HELP">Edge extension: Configures the policies.</string>
+			<string id="CAT_EE8033BF_FB7C_41EF_89BD_94D2CA2DB884">Google Chrome Extension policy</string>
+			<string id="CAT_EE8033BF_FB7C_41EF_89BD_94D2CA2DB884_HELP">Chrome extension: Configures the policies.</string>
+			<string id="POL_457F6D52_7682_4579_8E1F_F947B5C5625B">tenantID</string>
+			<string id="POL_457F6D52_7682_4579_8E1F_F947B5C5625B_HELP">Edge Extension: tenantID for EntraID tenant restrictions V2, can be found on EntraID portal.</string>
+			<string id="POL_480AEA52_ED79_43A5_8942_466A1EE54F92">policyGUID</string>
+			<string id="POL_480AEA52_ED79_43A5_8942_466A1EE54F92_HELP">Edge Extension: policyGUID for EntraID tenant restrictions V2, can be found on EntraID portal.</string>
+			<string id="POL_575E81F2_3928_4B0E_B203_8CA63C0BC92A">tenantID</string>
+			<string id="POL_575E81F2_3928_4B0E_B203_8CA63C0BC92A_HELP">Chrome Extension: tenantID for EntraID tenant restrictions V2, can be found on EntraID portal.</string>
+			<string id="POL_D80AD87B_0201_4952_AC05_D6276D6FED8E">policyGUID</string>
+			<string id="POL_D80AD87B_0201_4952_AC05_D6276D6FED8E_HELP">Chrome Extension: policyGUID for EntraID tenant restrictions V2, can be found on EntraID portal.</string>
+		</stringTable>
+		<presentationTable>
+			<presentation id="POL_457F6D52_7682_4579_8E1F_F947B5C5625B">
+				<textBox refId="TXT_457F6D52_7682_4579_8E1F_F947B5C5625B">
+					<label>tenantID</label>
+					<defaultValue></defaultValue>
+				</textBox>
+			</presentation>
+			<presentation id="POL_480AEA52_ED79_43A5_8942_466A1EE54F92">
+				<textBox refId="TXT_480AEA52_ED79_43A5_8942_466A1EE54F92">
+					<label>policyGUID</label>
+					<defaultValue></defaultValue>
+				</textBox>
+			</presentation>
+			<presentation id="POL_575E81F2_3928_4B0E_B203_8CA63C0BC92A">
+				<textBox refId="TXT_575E81F2_3928_4B0E_B203_8CA63C0BC92A">
+					<label>tenantID</label>
+					<defaultValue></defaultValue>
+				</textBox>
+			</presentation>
+			<presentation id="POL_D80AD87B_0201_4952_AC05_D6276D6FED8E">
+				<textBox refId="TXT_D80AD87B_0201_4952_AC05_D6276D6FED8E">
+					<label>policyGUID</label>
+					<defaultValue></defaultValue>
+				</textBox>
+			</presentation>
+		</presentationTable>
+	</resources>
+</policyDefinitionResources>
