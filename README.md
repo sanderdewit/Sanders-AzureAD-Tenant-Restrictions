@@ -1,4 +1,5 @@
 # Sanders-EntraID-Tenant-Restrictions
+can be found here: [https://microsoftedge.microsoft.com/addons/detail/sanders-entraid-tenant-re/gccmeeiieginkomhjdjaecdfnheadigo]
 This is about an Edge extension that will do the following.
 It uses the declarativeNetRequest API which is a bit more privacy friendly than the webrequest API.
 
@@ -17,6 +18,13 @@ It will inject headers for:
   This extension is not enabled by default for InPrivate/Incognito session. Disable InPrivate/InCognito if that's a requirement.
 
 Policies are set via;
-Computer\HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Edge\3rdparty\Extensions\nfkbcpeceogpklhoiefkgilpmockpnpi\policy
+Computer\HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Edge\3rdparty\Extensions\gccmeeiieginkomhjdjaecdfnheadigo\policy
 tenantID dword
 policyGUID dword
+
+
+V0.27
+- Fixed a bug that if no options were set, it would inject the header with undefined:undefined
+- added the options screen when clicking on the extension for easier access.
+- updated the ADMX to support both Edge & Chrome
+- added plist files to enforce policies for MacOS
