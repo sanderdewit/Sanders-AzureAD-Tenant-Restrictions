@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>com.microsoft.Edge.extensions.gccmeeiieginkomhjdjaecdfnheadigo</key>
+  <dict>
+      <key>state</key>
+      <string>always</string>
+      <key>value</key>
+      <array>
+          <dict>
+            <key>tenantID</key>
+            <string>tenant</string>
+            <key>policyGUID</key>
+            <string>policy.com</string>
+          </dict>
+      </array>
+    </dict>
+</dict>
+</plist>
