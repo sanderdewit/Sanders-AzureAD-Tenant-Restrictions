@@ -1,0 +1,49 @@
+<policyDefinitions revision="1.0" schemaVersion="1.0"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<policyNamespaces>
+		<target prefix="SandersEntraID" namespace="MSC.Policies.59A408D2_6AEE_4CD2_98CC_DDAB27348CDF"/>
+		<using prefix="windows" namespace="Microsoft.Policies.Windows"/>
+	</policyNamespaces>
+	<supersededAdm fileName=""/>
+	<resources minRequiredRevision="1.0" fallbackCulture="EntraIDRestrictionsExt.admx"/>
+	<categories>
+		<category name="CAT_XML_2_ADMXL" displayName="$(string.CAT_XML_2_ADMXL)" explainText="$(string.CAT_XML_2_ADMXL_HELP)"/>
+		<category name="CAT_571DFA6A_1ABE_46F1_8B63_1C00BA1D52AC" displayName="$(string.CAT_571DFA6A_1ABE_46F1_8B63_1C00BA1D52AC)" explainText="$(string.CAT_571DFA6A_1ABE_46F1_8B63_1C00BA1D52AC_HELP)">
+			<parentCategory ref="CAT_XML_2_ADMXL"/>
+		</category>
+		<category name="CAT_EE8033BF_FB7C_41EF_89BD_94D2CA2DB884" displayName="$(string.CAT_EE8033BF_FB7C_41EF_89BD_94D2CA2DB884)" explainText="$(string.CAT_EE8033BF_FB7C_41EF_89BD_94D2CA2DB884_HELP)">
+			<parentCategory ref="CAT_XML_2_ADMXL"/>
+		</category>
+	</categories>
+	<policies>
+		<policy name="POL_457F6D52_7682_4579_8E1F_F947B5C5625B" displayName="$(string.POL_457F6D52_7682_4579_8E1F_F947B5C5625B)" explainText="$(string.POL_457F6D52_7682_4579_8E1F_F947B5C5625B_HELP)" key="Software\Policies\Microsoft\Edge\3rdparty\extensions\gccmeeiieginkomhjdjaecdfnheadigo\policy" class="User" presentation="$(presentation.POL_457F6D52_7682_4579_8E1F_F947B5C5625B)">
+			<parentCategory ref="CAT_571DFA6A_1ABE_46F1_8B63_1C00BA1D52AC"/>
+			<supportedOn ref="windows:SUPPORTED_WindowsVista"/>
+			<elements>
+				<text id="TXT_457F6D52_7682_4579_8E1F_F947B5C5625B" valueName="tenantID"/>
+			</elements>
+		</policy>
+		<policy name="POL_480AEA52_ED79_43A5_8942_466A1EE54F92" displayName="$(string.POL_480AEA52_ED79_43A5_8942_466A1EE54F92)" explainText="$(string.POL_480AEA52_ED79_43A5_8942_466A1EE54F92_HELP)" key="Software\Policies\Microsoft\Edge\3rdparty\extensions\gccmeeiieginkomhjdjaecdfnheadigo\policy" class="User" presentation="$(presentation.POL_480AEA52_ED79_43A5_8942_466A1EE54F92)">
+			<parentCategory ref="CAT_571DFA6A_1ABE_46F1_8B63_1C00BA1D52AC"/>
+			<supportedOn ref="windows:SUPPORTED_WindowsVista"/>
+			<elements>
+				<text id="TXT_480AEA52_ED79_43A5_8942_466A1EE54F92" valueName="policyGUID"/>
+			</elements>
+		</policy>
+		<policy name="POL_575E81F2_3928_4B0E_B203_8CA63C0BC92A" displayName="$(string.POL_575E81F2_3928_4B0E_B203_8CA63C0BC92A)" explainText="$(string.POL_575E81F2_3928_4B0E_B203_8CA63C0BC92A_HELP)" key="Software\Policies\Google\Chrome\3rdparty\extensions\pdhbkciflmjaidfjlanomanbimnbpimj\policy" class="User" presentation="$(presentation.POL_575E81F2_3928_4B0E_B203_8CA63C0BC92A)">
+			<parentCategory ref="CAT_EE8033BF_FB7C_41EF_89BD_94D2CA2DB884"/>
+			<supportedOn ref="windows:SUPPORTED_WindowsVista"/>
+			<elements>
+				<text id="TXT_575E81F2_3928_4B0E_B203_8CA63C0BC92A" valueName="tenantID"/>
+			</elements>
+		</policy>
+		<policy name="POL_D80AD87B_0201_4952_AC05_D6276D6FED8E" displayName="$(string.POL_D80AD87B_0201_4952_AC05_D6276D6FED8E)" explainText="$(string.POL_D80AD87B_0201_4952_AC05_D6276D6FED8E_HELP)" key="Software\Policies\Google\Chrome\3rdparty\extensions\pdhbkciflmjaidfjlanomanbimnbpimj\policy" class="User" presentation="$(presentation.POL_D80AD87B_0201_4952_AC05_D6276D6FED8E)">
+			<parentCategory ref="CAT_EE8033BF_FB7C_41EF_89BD_94D2CA2DB884"/>
+			<supportedOn ref="windows:SUPPORTED_WindowsVista"/>
+			<elements>
+				<text id="TXT_D80AD87B_0201_4952_AC05_D6276D6FED8E" valueName="policyGUID"/>
+			</elements>
+		</policy>
+	</policies>
+</policyDefinitions>
