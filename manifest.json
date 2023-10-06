@@ -12,10 +12,13 @@
       "open_in_tab": true,
       "page": "options.html"
    },
-   "permissions": [ "storage", "declarativeNetRequest", "declarativeNetRequestFeedback" ],
+   "permissions": [ "storage", "declarativeNetRequest"],
    "storage": {
       "managed_schema": "schema.json"
    },
-   "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx",
-   "version": "0.25"
+   "version": "0.27"
+   "action": {
+      "default_title": "Options",
+      "default_popup": "options.html"
+   }
 }
