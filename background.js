@@ -56,7 +56,7 @@ async function createRules() {
   const ruleIdsToRemove = existingRules.map((rule) => rule.id);
   await chrome.declarativeNetRequest.updateDynamicRules({ removeRuleIds: ruleIdsToRemove });
 
-  if (accessHeaderValue !== ':') {
+  if (accessHeaderValue !== ':' && accessHeaderValue !== 'undefined:undefined') {
     // Add the new rules
     await chrome.declarativeNetRequest.updateDynamicRules({ addRules: newRules });
   }
