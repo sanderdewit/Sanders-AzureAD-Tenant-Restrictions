@@ -46,8 +46,9 @@ Go to into intune.microsoft.com and to devices.
 There select configuration under managed devices and select import admx.
  ![image](https://github.com/sanderdewit/Sanders-AzureAD-Tenant-Restrictions/assets/30201578/dcfcf39f-a1a4-4676-b57a-76002ac9fc26)
 
-Import windows.admx (with windows.adml) if you don’t have it available, download it here;
-Download Administrative Templates (.admx) for Windows 11 2022 Update (22H2) from Official Microsoft Download Center
+Import windows.admx (with windows.adml) if you don’t have it available, download it here:
+* [Download Administrative Templates (.admx) for Windows 11 2022 Update (22H2) from Official Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=104593)
+
 It’s installs in C:\Program Files (x86)\Microsoft Group Policy\Windows 11 September 2022 Update (22H2)\PolicyDefinitions
  ![image](https://github.com/sanderdewit/Sanders-AzureAD-Tenant-Restrictions/assets/30201578/52841f1f-cf05-4a61-8a1f-6543e062036c)
 
